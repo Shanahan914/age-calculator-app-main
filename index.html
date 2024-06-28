@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="age-input">
+        <form>
+          <div class="form-col" id="form-day">
+            <label for="day-input" class="form-label">DAY</label>
+            <input class="form-input" id="day-input" placeholder="DD" type="number" />
+            <p class="error-message" id="age-error"></p>
+          </div>
+          <div class="form-col" id="form-month">
+            <label for="month-input" class="form-label">MONTH</label>
+            <input class="form-input" id="month-input" placeholder="MM" type="number" />
+            <p class="error-message" id="month-error"></p>
+          </div>
+          <div class="form-col" id="form-year">
+            <label for="year-input" class="form-label">YEAR</label>
+            <input class="form-input" id="year-input" placeholder="YYYY" type="number"/>
+            <p class="error-message" id="year-error"></p>
+          </div>
+        </form>
+      </section>
+
+      <div class="hr-button" >
+        <hr>
+        <button><img src="assets/images/icon-arrow.svg" alt="downwards arrow"></button>
+      </div>
+      
+
+      <section class="age-output">
+        <div class="output-detail" id="years-output">
+          <p class="number-output" id="number-years">--</p>
+          <h1>years</h1>
+        </div>
+        <div class="output-detail" id="months-output">
+          <p class="number-output" id="number-months">--</p>
+          <h1>months</h1>
+        </div>
+        <div class="output-detail" id="days-output">
+          <p class="number-output" id="number-days">--</p>
+          <h1>days</h1>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

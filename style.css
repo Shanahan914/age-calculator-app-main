@@ -1,0 +1,180 @@
+:root{
+
+--Purple: hsl(259, 100%, 65%);
+--Lightred: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Offwhite: hsl(0, 0%, 94%);
+--Lightgrey: hsl(0, 0%, 86%);
+--Smokeygrey: hsl(0, 1%, 44%);
+--Offblack: hsl(0, 0%, 8%);
+
+font-family: "Poppins";
+}
+
+body{
+    background-color: var(--Lightgrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    background-color: var(--White);
+    width: 600px;
+    height: 500px;
+    border-radius: 20px 20px 120px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* input section */
+
+section{
+    margin: 30px 0 0 60px;
+}
+
+form{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.form-col{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+label{
+    color: var(--Smokeygrey);
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    /* width: 110px; */
+}
+
+input{
+    height: 40px;
+    width: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+input:focus{
+    outline-color: var(--Purple);
+}
+
+.error-message{
+    display: none;
+    font-size: 10px;
+    color: var(--Lightred);
+    margin-bottom:0;
+}
+
+/* button area */
+.hr-button{
+    position:relative;
+    margin-left:60px;
+    width:80%;
+}
+
+button{
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Purple);
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    position: absolute;
+    top:-16px;
+    right:-10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+button:hover{
+    background-color: var(--Offblack);
+}
+
+
+/* output section */
+
+.age-output{
+    margin-bottom: 20px;
+}
+
+.output-detail{
+    display: flex;
+    align-items: center;
+}
+
+.output-detail > *{
+    font-size: 60px;
+    font-weight: 800;
+    margin:0;
+    font-style: italic;
+}
+
+.number-output{
+    color: var(--Purple);
+    margin-right: 10px;
+}
+
+/* error states */
+
+.error-border{
+    border: 1px solid var(--Lightred);
+}
+
+.error-color{
+    color: var(--Lightred);
+}
+
+.error-show{
+    display: block;
+}
+
+@media only screen and (max-width: 620px){
+    main{
+        max-width:450px;
+        width: 90%;
+        margin: 5px;
+        height: fit-content;
+    }
+    section{
+        margin: 30px 20px 0 20px;
+    }
+
+    .hr-button{
+        width:90%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input{
+        width: 60px;
+    }
+
+    form{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .form-col{
+        width: 25%;
+        margin-right: 5px;
+    }
+
+    button{
+        right:40%;
+    }
+
+    .output-detail > *{
+        font-size: 42px;
+    }
+}
